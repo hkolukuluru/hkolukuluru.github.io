@@ -1,0 +1,543 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
+import Footer from "../components/Footer.astro";
+import TopNav from "../components/TopNav.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harshitha Kolukuluru</title>
+    <meta name="description" content="CS graduate portfolio: projects, skills, education." />
+  </head>
+
+  <body>
+    <TopNav />
+    <div class="container">
+
+      <Header />
+
+      <hr />
+
+      <Section id="about" title="About Me">
+        <p>
+          I'm a Computer Science graduate student at UMass Amherst working at the intersection of ML systems, applied machine learning, and data systems, with a focus on building ML systems that are robust, reproducible, and effective under real-world constraints.
+        </p>
+        <p>
+          As a Graduate Student Researcher in the BioNLP Lab, I work on multi-agent medical simulation frameworks using LLMs, GraphRAG, and reinforcement learning. My work involves designing memory-augmented agents, reducing hallucinations in clinical interactions, and developing evaluation pipelines for intelligent agents operating in complex, dynamic environments.
+        </p>
+        <p>
+          Previously, I was a Software and Site Reliability Engineer at Rakuten Mobile (Tokyo), where I built and operated large-scale distributed systems in production. I deployed microservices on Kubernetes, implemented observability and infrastructure automation, and helped maintain 99.9% uptime while improving detection, deployment velocity, and overall system performance.
+        </p>
+        <p style="margin-bottom: 0;">
+          Across both research and industry, I enjoy bridging experimentation and production, turning ML ideas into scalable, reliable systems. I'm currently seeking opportunities in ML systems, applied ML, data science, software engineering, and site reliability engineering roles.
+        </p>
+      </Section>
+
+      <hr />
+      <Section id="education" title="Education">
+        {/* UMass Amherst */}
+        <div class="card">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img
+                  src="/umass-logo.png"
+                  alt="UMass Amherst"
+                />
+              </div>
+      
+              <div class="experience-title-company">
+                <h3><strong>University of Massachusetts Amherst</strong></h3>
+      
+                <div class="edu-details">
+                  <p class="experience-company">
+                    Master of Science in Computer Science
+                  </p>
+                  <p class="muted small edu-cgpa">
+                    CGPA: <strong>4.0 / 4.0</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <p class="experience-date">Sept 2024 – May 2026</p>
+          </div>
+      
+          <div class="edu-courses">
+            <p class="small">
+              <span class="kicker">Selected coursework:</span>{" "}
+              Industry Mentorship Practicum (AI), Reinforcement Learning, Natural Language Processing,
+              Advanced Machine Learning, Advanced Algorithms, Neural Networks,
+              Applied Information Retrieval, Systems for Data Science, Statistics
+            </p>
+          </div>
+        </div>
+      <br />
+        {/* IIT Indore */}
+        <div class="card">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img
+                  src="/iiti-logo.svg"
+                  alt="IIT Indore"
+                />
+              </div>
+      
+              <div class="experience-title-company">
+                <h3><strong>Indian Institute of Technology Indore</strong></h3>
+      
+                <div class="edu-details">
+                  <p class="experience-company">
+                    Bachelor of Technology in Electrical Engineering
+                  </p>
+                  <p class="muted small edu-cgpa">
+                    CGPA: <strong>3.7 / 4.0</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <p class="experience-date">2018 – 2022</p>
+          </div>
+      
+          <div class="edu-courses">
+            <p class="small">
+              <span class="kicker">Relevant coursework:</span>{" "}
+              Data Structures and Algorithms, Computer Programming, Computer Vision,
+              MLOps, Digital Signal Processing, Control Systems, Digital Communication,
+              Network Theory, Linear Algebra, Numerical Methods
+            </p>
+          </div>
+
+          <div class="edu-courses">
+            <p class="small">
+              <span class="kicker">Activities and Societies:</span>{" "}
+              DebSoc(Debating Society), Model United Nation (MUN IITI), Student International Affairs Cell (SIAC), Counselling Cell
+            </p>
+          </div>
+        </div>
+      </Section>
+      <Section id="projects" title="Projects">
+        <div class="projects-grid">
+          <a href="https://github.com/hkolukuluru/BioNLP-AIPatient" target="_blank" rel="noreferrer" class="project-card">
+            <div class="project-image project-image-medical">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                <path d="M12 8v4M10 10h4"/>
+              </svg>
+            </div>
+            <h3>AI Hospital / Multi-Agent Medical Simulation</h3>
+            <!-- <p class="project-org">BioNLP Lab</p> -->
+            <p class="project-description">
+              Multi-agent medical simulation framework using LLMs, GraphRAG, and reinforcement learning. 
+              Designed memory-augmented agents and evaluation pipelines for intelligent agents in clinical environments.
+            </p>
+          </a>
+
+          <a href="https://github.com/sensai99/LSR-VQ" target="_blank" rel="noreferrer" class="project-card">
+            <div class="project-image project-image-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+                <path d="M8 11h6M11 8v6"/>
+              </svg>
+            </div>
+            <h3>Learned Sparse Retrieval with Vector Quantization (LSR-VQ)</h3>
+            <p class="project-org"></p>
+            <p class="project-description">
+              Advanced information retrieval system combining learned sparse representations with vector quantization techniques 
+              to improve search efficiency and accuracy in large-scale document collections.
+            </p>
+          </a>
+
+          <a href="https://github.com/hkolukuluru/Fit-Aware-re-ranking-of-Multimodal-content" target="_blank" rel="noreferrer" class="project-card">
+            <div class="project-image project-image-fashion">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 3h12l4 6-10 12L2 9Z"/>
+                <path d="M11 3 8 9l4 9 4-9-3-6"/>
+                <path d="M2 9h20"/>
+              </svg>
+            </div>
+            <h3>Two-Stage Fit-Aware Fashion Retrieval System</h3>
+            <p class="project-org"></p>
+            <p class="project-description">
+              Intelligent fashion recommendation system that considers both style and fit preferences. 
+              Uses a two-stage approach to match users with clothing items that align with their aesthetic and sizing requirements.
+            </p>
+          </a>
+
+          <a href="https://github.com/hkolukuluru/Real-Time-Analytics-and-Recommendation-System" target="_blank" rel="noreferrer" class="project-card">
+            <div class="project-image project-image-analytics">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="M7 16l4-4 4 4 6-6"/>
+                <path d="M7 12h10"/>
+              </svg>
+            </div>
+            <h3>Real-Time E-Commerce Analytics & Recommendation System</h3>
+            <p class="project-org"></p>
+            <p class="project-description">
+              Real-time analytics platform for e-commerce with personalized recommendation engine. 
+              Processes streaming data to provide instant insights and dynamic product suggestions based on user behavior.
+            </p>
+          </a>
+        </div>
+        
+        <div class="more-projects-container" id="more-projects" style="display: none;">
+          <div class="projects-grid">
+            <a href="https://github.com/hkolukuluru/Customer-Relationship-Prediction" target="_blank" rel="noreferrer" class="project-card">
+              <div class="project-image project-image-prediction">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M2 12h20"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M8 8l8 8M16 8l-8 8"/>
+                </svg>
+              </div>
+              <h3>Customer Relationship Prediction (KDD Cup)</h3>
+              <p class="project-org"></p>
+              <p class="project-description">
+                Machine learning model for predicting customer relationships and churn using the KDD Cup 2009 dataset. 
+                Implemented feature engineering, model selection, and evaluation pipelines for large-scale customer analytics.
+              </p>
+            </a>
+
+            <a href="https://github.com/hkolukuluru/traffic_sign_recognition" target="_blank" rel="noreferrer" class="project-card">
+              <div class="project-image project-image-traffic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+              <h3>Traffic Sign Recognition</h3>
+              <!-- <p class="project-org">Bosch</p> -->
+              <p class="project-description">
+                Deep learning model for recognizing and classifying traffic signs using the German Traffic Sign Recognition Benchmark (GTSRB) dataset. 
+                Implemented preprocessing, data augmentation, and achieved high classification accuracy using convolutional neural networks.
+              </p>
+            </a>
+
+            <a href="https://github.com/JKashyap46/ai5-VQA" target="_blank" rel="noreferrer" class="project-card">
+              <div class="project-image project-image-vqa">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                  <path d="M12 8h.01M16 12h.01M8 12h.01M12 16h.01"/>
+                </svg>
+              </div>
+              <h3>Visual Question Answering (VQA)</h3>
+              <p class="project-org"></p>
+              <p class="project-description">
+                Built a VQA system using Vision-and-Language Transformer (ViLT) achieving 71% accuracy on VQA COCO dataset with 15ms prediction time. 
+                Developed React frontend and FastAPI backend, containerized and deployed on Google Kubernetes Engine with NGINX for end-to-end application hosting.
+              </p>
+            </a>
+
+            <a href="https://github.com/hkolukuluru/restaurant_recommendation_system" target="_blank" rel="noreferrer" class="project-card">
+              <div class="project-image project-image-restaurant">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                  <path d="M7 2v20"/>
+                  <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3v0"/>
+                  <path d="M21 15v7"/>
+                  <path d="M3 15v7"/>
+                </svg>
+              </div>
+              <h3>Restaurant Recommendation System</h3>
+              <p class="project-org"></p>
+              <p class="project-description">
+                Built a collaborative filtering recommendation system using the Yelp academic dataset with over 4 million data points. 
+                Implemented rating prediction, friend-based recommendations, and location-aware suggestions using TensorFlow/Keras with SGD optimizer.
+              </p>
+            </a>
+          </div>
+        </div>
+        
+        <div class="show-more-container">
+          <button class="show-more-btn" id="show-more-btn">
+            Show More Projects
+          </button>
+        </div>
+      </Section>
+      <Section id="experience" title="Experience">
+      <hr />
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-header-content">
+            <div class="experience-logo">
+              <img src="/umass-logo.png" alt="UMass Amherst" onerror="this.style.display='none'" />
+            </div>
+            <div class="experience-title-company">
+              <h3>Graduate Student Researcher</h3>
+              <p class="experience-company">BioNLP Lab, UMass Amherst</p>
+            </div>
+          </div>
+          <p class="experience-date">Feb 2025 - Dec 2025</p>
+        </div>
+      
+        <div class="experience-description">
+          <ul class="experience-bullets">
+            <li>
+              Designed and implemented a <strong>large-scale AI Hospital multi-agent medical simulation</strong>, engineering realistic patient, doctor, and nurse agents using <strong>GraphRAG-enhanced retrieval</strong> to enable dynamic, clinically grounded interactions.
+            </li>
+            <li>
+              Developed advanced <strong>patient-agent behavior models and role-playing strategies</strong>, including a <strong>fact-checking pipeline</strong> to validate synthetic medical data and generate high-fidelity datasets for training and evaluating <strong>clinical LLMs</strong>.
+            </li>
+            <!-- <li>
+              Architected <strong>novel memory systems</strong> for healthcare agents across diagnosis, patient education, addiction counseling, and persuasion tasks by integrating <strong>RAG, test-time adaptation, and RL-based policy optimization</strong>.
+            </li> -->
+            <li>
+              Built <strong>scalable multi-visit and multi-patient simulations</strong> (e.g., <em>ChatCLIDS</em>), enabling agents to leverage fine-grained conversation summaries, reflections, and longitudinal context for improved decision-making and <strong>cross-patient generalization</strong>.
+            </li>
+            <li>
+              Prototyped a <strong>hospital-wide shared memory pool</strong> storing interaction trajectories, enabling weaker agents to learn from stronger ones via <strong>similarity-based retrieval, subgraph clustering of patient profiles</strong>, and <strong>lesson distillation</strong> using models such as <strong>GPT-4o</strong>.
+            </li>
+            <!-- <li>
+              Engineered <strong>end-to-end pipelines</strong> for synthetic clinical data generation, validation, and evaluation, supporting robust benchmarking of LLMs in <strong>realistic healthcare scenarios</strong>.
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img src="/rakuten-logo.png" alt="Rakuten Mobile" onerror="this.style.display='none'" />
+              </div>
+              <div class="experience-title-company">
+                <h3>Software & Site Reliability Engineer</h3>
+                <p class="experience-company">Rakuten Mobile Inc., Tokyo, Japan</p>
+              </div>
+            </div>
+            <p class="experience-date">Jan 2023 – Jul 2024</p>
+          </div>
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>Engineered a <strong>Django-based Celery scheduling system</strong> to manage CPaaS SMS workflows, implementing concurrency controls to prevent task collisions and reducing Mean Time to Detect (MTTD) by <strong>180%</strong>.</li>
+              <li>Designed and built a <strong>distributed backend</strong> for collecting, storing, and processing SMS delivery receipts using Python, PostgreSQL, and Redis, improving concurrency handling and reducing data processing latency by <strong>20%</strong>.</li>
+              <li>Integrated backend services with a <strong>ReactJS monitoring dashboard</strong> and deployed the system via Nginx and ArgoCD, enabling real-time visibility, scalability, and high availability.</li>
+              <li>Automated daily performance reporting to executive stakeholders by programmatically extracting metrics from Grafana, Kibana, and Elasticsearch, <strong>fully eliminating manual reporting workflows</strong>.</li>
+              <li>Deployed and operated <strong>6+ microservices on Kubernetes</strong> using Helm, optimized <strong>CI/CD pipelines</strong> with Argo and GitLab, and accelerated deployment cycles by <strong>6×</strong> while sustaining <strong>99.9% uptime</strong>.</li>
+              <li>Built and maintained end-to-end observability pipelines using Prometheus, Grafana, and the ELK stack, delivering actionable alerting and performance insights that improved platform efficiency by <strong>25%</strong>.</li>
+              <li>Defined and managed cloud infrastructure using <strong>Terraform (IaC)</strong>, ensuring consistent deployments and reducing configuration-related errors by <strong>40%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img src="/univai-logo.png" alt="Univ.AI" onerror="this.style.display='none'" />
+              </div>
+              <div class="experience-title-company">
+                <h3>Product Management Intern</h3>
+                <p class="experience-company">Univ.AI, Bangalore, India</p>
+              </div>
+            </div>
+            <p class="experience-date">Aug 2022 – Dec 2022</p>
+          </div>
+        
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>
+                Drove <strong>cross-functional collaboration</strong> across engineering, design, and web teams to align on product goals, clarify requirements, and deliver initiatives from concept to execution, fostering clear communication, accountability, and shared ownership.
+              </li>
+              <li>
+                Formulated <strong>data-driven growth strategies</strong> using analytics to optimize program outreach, increasing user engagement by <strong>30%</strong> across educational offerings.
+              </li>
+              <li>
+                Authored <strong>technical content on AI trends and emerging technologies</strong>, reaching <strong>1,000+ readers</strong> and contributing to Univ.AI’s thought leadership and community growth.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </Section>
+
+      <hr />
+      <Section id="skills" title="Skills">
+        <div class="card">
+          <div class="skills-badges">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">C++</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">Bash</span>
+            <span class="badge">Golang</span>
+      
+            <span class="badge">PyTorch</span>
+            <span class="badge">TensorFlow</span>
+            <span class="badge">Hugging Face</span>
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">NumPy</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">LLMs · LoRA / QLoRA</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">LangGraph</span>
+            <span class="badge">LlamaIndex</span>
+            <span class="badge">RAG</span>
+            <span class="badge">MCP</span>
+            <span class="badge">CrewAI</span>
+
+      
+            <span class="badge">Docker</span>
+            <span class="badge">Kubernetes</span>
+            <span class="badge">Helm</span>
+            <span class="badge">Terraform</span>
+            <span class="badge">Jenkins</span>
+            <span class="badge">ArgoCD</span>
+            <span class="badge">GitLab</span>
+            <span class="badge">Git</span>
+            <span class="badge">Linux</span>
+            <span class="badge">CI/CD</span>
+      
+            <span class="badge">AWS</span>
+            <span class="badge">Kafka</span>
+            <span class="badge">Redis</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">ELK Stack</span>
+            <span class="badge">Prometheus</span>
+            <span class="badge">Grafana</span>
+            <span class="badge">Okta</span>
+          </div>
+        </div>
+      </Section>
+      
+
+
+      <hr />
+      
+
+      
+      
+      
+      
+      
+      <hr />
+      <Section id="leadership" title="Leadership & Extracurricular">
+  
+        {/* SIAC */}
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-title-company">
+                <h3>Outreach Coordinator, Co-Founder</h3>
+                <p class="experience-company">
+                  Student International Affairs Cell (SIAC), IIT Indore
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>
+                Co-founded the <strong>Student International Affairs Cell</strong> at IIT Indore, expanding international outreach by organizing high-impact events such as the <strong>Nobel Laureates Lecture Series</strong> and collaborating with the International Affairs Office to increase awareness of global opportunities.
+              </li>
+              <li>
+                Led and managed a <strong>7-member outreach team</strong>, driving initiatives that improved student visibility and access to international programs.
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        {/* MUN */}
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-title-company">
+                <h3>Chief of Executive Board Affairs</h3>
+                <p class="experience-company">
+                  Model United Nations (MUN), IIT Indore
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>
+                Directed the <strong>first fully virtual MUN IIT Indore</strong> with <strong>200+ delegates</strong>, overseeing Executive Board selection and ensuring procedural integrity while maintaining event quality during the online transition.
+              </li>
+              <li>
+                Coordinated outreach to <strong>50+ schools and colleges across India</strong> as USG Public Affairs, breaking participation records with <strong>300+ delegates</strong>, the highest in MUN IIT Indore history.
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        {/* DebSoc */}
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-title-company">
+                <h3>Mentor, Core Team Member</h3>
+                <p class="experience-company">
+                  Debating Society (DebSoc), IIT Indore
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>
+                Mentored <strong>20 students</strong> in competitive debating, strengthening argumentation, public speaking, and critical thinking skills.
+              </li>
+              <li>
+                Organized and judged multiple debating competitions and events, contributing to a strong campus culture of debate and discourse.
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      </Section>
+      
+      <Section id="contact" title="Contact">
+        <div class="card">
+          <p style="margin-bottom: 6px;">
+            <a href="mailto:you@example.com">hkolukuluru@gmail.com</a>
+          </p>
+          <p class="small muted" style="margin-bottom:0;">
+            <a href="https://github.com/hkolukuluru" target="_blank" rel="noreferrer">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/harshithakolukuluru/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </Section>
+
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const moreProjects = document.getElementById('more-projects');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    
+    if (!moreProjects || !showMoreBtn) return;
+    
+    showMoreBtn.addEventListener('click', function() {
+      const isHidden = moreProjects.style.display === 'none' || window.getComputedStyle(moreProjects).display === 'none';
+      
+      if (isHidden) {
+        moreProjects.style.display = 'block';
+        showMoreBtn.textContent = 'Show Less Projects';
+      } else {
+        moreProjects.style.display = 'none';
+        showMoreBtn.textContent = 'Show More Projects';
+      }
+    });
+  });
+</script>
