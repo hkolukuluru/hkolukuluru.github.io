@@ -38,6 +38,104 @@ import TopNav from "../components/TopNav.astro";
       </Section>
 
       <hr />
+      <Section id="experience" title="Experience">
+      <hr />
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-header-content">
+            <div class="experience-logo">
+              <img src="/umass-logo.png" alt="UMass Amherst" onerror="this.style.display='none'" />
+            </div>
+            <div class="experience-title-company">
+              <h3>Graduate Student Researcher</h3>
+              <p class="experience-company">BioNLP Lab, UMass Amherst</p>
+            </div>
+          </div>
+          <p class="experience-date">Feb 2025 - Dec 2025</p>
+        </div>
+      
+        <div class="experience-description">
+          <ul class="experience-bullets">
+            <li>
+              Designed and implemented a <strong>large-scale AI Hospital multi-agent medical simulation</strong>, engineering realistic patient, doctor, and nurse agents using <strong>GraphRAG-enhanced retrieval</strong> to enable dynamic, clinically grounded interactions.
+            </li>
+            <li>
+              Developed advanced <strong>patient-agent behavior models and role-playing strategies</strong>, including a <strong>fact-checking pipeline</strong> to validate synthetic medical data and generate high-fidelity datasets for training and evaluating <strong>clinical LLMs</strong>.
+            </li>
+            <!-- <li>
+              Architected <strong>novel memory systems</strong> for healthcare agents across diagnosis, patient education, addiction counseling, and persuasion tasks by integrating <strong>RAG, test-time adaptation, and RL-based policy optimization</strong>.
+            </li> -->
+            <li>
+              Built <strong>scalable multi-visit and multi-patient simulations</strong> (e.g., <em>ChatCLIDS</em>), enabling agents to leverage fine-grained conversation summaries, reflections, and longitudinal context for improved decision-making and <strong>cross-patient generalization</strong>.
+            </li>
+            <li>
+              Prototyped a <strong>hospital-wide shared memory pool</strong> storing interaction trajectories, enabling weaker agents to learn from stronger ones via <strong>similarity-based retrieval, subgraph clustering of patient profiles</strong>, and <strong>lesson distillation</strong> using models such as <strong>GPT-4o</strong>.
+            </li>
+            <!-- <li>
+              Engineered <strong>end-to-end pipelines</strong> for synthetic clinical data generation, validation, and evaluation, supporting robust benchmarking of LLMs in <strong>realistic healthcare scenarios</strong>.
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img src="/rakuten-logo.png" alt="Rakuten Mobile" onerror="this.style.display='none'" />
+              </div>
+              <div class="experience-title-company">
+                <h3>Software & Site Reliability Engineer</h3>
+                <p class="experience-company">Rakuten Mobile Inc., Tokyo, Japan</p>
+              </div>
+            </div>
+            <p class="experience-date">Jan 2023 – Jul 2024</p>
+          </div>
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>Engineered a <strong>Django-based Celery scheduling system</strong> to manage CPaaS SMS workflows, implementing concurrency controls to prevent task collisions and reducing Mean Time to Detect (MTTD) by <strong>180%</strong>.</li>
+              <li>Designed and built a <strong>distributed backend</strong> for collecting, storing, and processing SMS delivery receipts using Python, PostgreSQL, and Redis, improving concurrency handling and reducing data processing latency by <strong>20%</strong>.</li>
+              <li>Integrated backend services with a <strong>ReactJS monitoring dashboard</strong> and deployed the system via Nginx and ArgoCD, enabling real-time visibility, scalability, and high availability.</li>
+              <li>Automated daily performance reporting to executive stakeholders by programmatically extracting metrics from Grafana, Kibana, and Elasticsearch, <strong>fully eliminating manual reporting workflows</strong>.</li>
+              <li>Deployed and operated <strong>6+ microservices on Kubernetes</strong> using Helm, optimized <strong>CI/CD pipelines</strong> with Argo and GitLab, and accelerated deployment cycles by <strong>6×</strong> while sustaining <strong>99.9% uptime</strong>.</li>
+              <li>Built and maintained end-to-end observability pipelines using Prometheus, Grafana, and the ELK stack, delivering actionable alerting and performance insights that improved platform efficiency by <strong>25%</strong>.</li>
+              <li>Defined and managed cloud infrastructure using <strong>Terraform (IaC)</strong>, ensuring consistent deployments and reducing configuration-related errors by <strong>40%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-header-content">
+              <div class="experience-logo">
+                <img src="/univai-logo.png" alt="Univ.AI" onerror="this.style.display='none'" />
+              </div>
+              <div class="experience-title-company">
+                <h3>Product Management Intern</h3>
+                <p class="experience-company">Univ.AI, Bangalore, India</p>
+              </div>
+            </div>
+            <p class="experience-date">Aug 2022 – Dec 2022</p>
+          </div>
+        
+          <div class="experience-description">
+            <ul class="experience-bullets">
+              <li>
+                Drove <strong>cross-functional collaboration</strong> across engineering, design, and web teams to align on product goals, clarify requirements, and deliver initiatives from concept to execution, fostering clear communication, accountability, and shared ownership.
+              </li>
+              <li>
+                Formulated <strong>data-driven growth strategies</strong> using analytics to optimize program outreach, increasing user engagement by <strong>30%</strong> across educational offerings.
+              </li>
+              <li>
+                Authored <strong>technical content on AI trends and emerging technologies</strong>, reaching <strong>1,000+ readers</strong> and contributing to Univ.AI's thought leadership and community growth.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </Section>
+
+      <hr />
       <Section id="education" title="Education">
         {/* UMass Amherst */}
         <div class="card">
@@ -273,104 +371,6 @@ import TopNav from "../components/TopNav.astro";
           </button>
         </div>
       </Section>
-      <Section id="experience" title="Experience">
-      <hr />
-      <div class="experience-item">
-        <div class="experience-header">
-          <div class="experience-header-content">
-            <div class="experience-logo">
-              <img src="/umass-logo.png" alt="UMass Amherst" onerror="this.style.display='none'" />
-            </div>
-            <div class="experience-title-company">
-              <h3>Graduate Student Researcher</h3>
-              <p class="experience-company">BioNLP Lab, UMass Amherst</p>
-            </div>
-          </div>
-          <p class="experience-date">Feb 2025 - Dec 2025</p>
-        </div>
-      
-        <div class="experience-description">
-          <ul class="experience-bullets">
-            <li>
-              Designed and implemented a <strong>large-scale AI Hospital multi-agent medical simulation</strong>, engineering realistic patient, doctor, and nurse agents using <strong>GraphRAG-enhanced retrieval</strong> to enable dynamic, clinically grounded interactions.
-            </li>
-            <li>
-              Developed advanced <strong>patient-agent behavior models and role-playing strategies</strong>, including a <strong>fact-checking pipeline</strong> to validate synthetic medical data and generate high-fidelity datasets for training and evaluating <strong>clinical LLMs</strong>.
-            </li>
-            <!-- <li>
-              Architected <strong>novel memory systems</strong> for healthcare agents across diagnosis, patient education, addiction counseling, and persuasion tasks by integrating <strong>RAG, test-time adaptation, and RL-based policy optimization</strong>.
-            </li> -->
-            <li>
-              Built <strong>scalable multi-visit and multi-patient simulations</strong> (e.g., <em>ChatCLIDS</em>), enabling agents to leverage fine-grained conversation summaries, reflections, and longitudinal context for improved decision-making and <strong>cross-patient generalization</strong>.
-            </li>
-            <li>
-              Prototyped a <strong>hospital-wide shared memory pool</strong> storing interaction trajectories, enabling weaker agents to learn from stronger ones via <strong>similarity-based retrieval, subgraph clustering of patient profiles</strong>, and <strong>lesson distillation</strong> using models such as <strong>GPT-4o</strong>.
-            </li>
-            <!-- <li>
-              Engineered <strong>end-to-end pipelines</strong> for synthetic clinical data generation, validation, and evaluation, supporting robust benchmarking of LLMs in <strong>realistic healthcare scenarios</strong>.
-            </li> -->
-          </ul>
-        </div>
-      </div>
-      
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="experience-header-content">
-              <div class="experience-logo">
-                <img src="/rakuten-logo.png" alt="Rakuten Mobile" onerror="this.style.display='none'" />
-              </div>
-              <div class="experience-title-company">
-                <h3>Software & Site Reliability Engineer</h3>
-                <p class="experience-company">Rakuten Mobile Inc., Tokyo, Japan</p>
-              </div>
-            </div>
-            <p class="experience-date">Jan 2023 – Jul 2024</p>
-          </div>
-          <div class="experience-description">
-            <ul class="experience-bullets">
-              <li>Engineered a <strong>Django-based Celery scheduling system</strong> to manage CPaaS SMS workflows, implementing concurrency controls to prevent task collisions and reducing Mean Time to Detect (MTTD) by <strong>180%</strong>.</li>
-              <li>Designed and built a <strong>distributed backend</strong> for collecting, storing, and processing SMS delivery receipts using Python, PostgreSQL, and Redis, improving concurrency handling and reducing data processing latency by <strong>20%</strong>.</li>
-              <li>Integrated backend services with a <strong>ReactJS monitoring dashboard</strong> and deployed the system via Nginx and ArgoCD, enabling real-time visibility, scalability, and high availability.</li>
-              <li>Automated daily performance reporting to executive stakeholders by programmatically extracting metrics from Grafana, Kibana, and Elasticsearch, <strong>fully eliminating manual reporting workflows</strong>.</li>
-              <li>Deployed and operated <strong>6+ microservices on Kubernetes</strong> using Helm, optimized <strong>CI/CD pipelines</strong> with Argo and GitLab, and accelerated deployment cycles by <strong>6×</strong> while sustaining <strong>99.9% uptime</strong>.</li>
-              <li>Built and maintained end-to-end observability pipelines using Prometheus, Grafana, and the ELK stack, delivering actionable alerting and performance insights that improved platform efficiency by <strong>25%</strong>.</li>
-              <li>Defined and managed cloud infrastructure using <strong>Terraform (IaC)</strong>, ensuring consistent deployments and reducing configuration-related errors by <strong>40%</strong>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="experience-header-content">
-              <div class="experience-logo">
-                <img src="/univai-logo.png" alt="Univ.AI" onerror="this.style.display='none'" />
-              </div>
-              <div class="experience-title-company">
-                <h3>Product Management Intern</h3>
-                <p class="experience-company">Univ.AI, Bangalore, India</p>
-              </div>
-            </div>
-            <p class="experience-date">Aug 2022 – Dec 2022</p>
-          </div>
-        
-          <div class="experience-description">
-            <ul class="experience-bullets">
-              <li>
-                Drove <strong>cross-functional collaboration</strong> across engineering, design, and web teams to align on product goals, clarify requirements, and deliver initiatives from concept to execution, fostering clear communication, accountability, and shared ownership.
-              </li>
-              <li>
-                Formulated <strong>data-driven growth strategies</strong> using analytics to optimize program outreach, increasing user engagement by <strong>30%</strong> across educational offerings.
-              </li>
-              <li>
-                Authored <strong>technical content on AI trends and emerging technologies</strong>, reaching <strong>1,000+ readers</strong> and contributing to Univ.AI’s thought leadership and community growth.
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-      </Section>
-
-      <hr />
       <Section id="skills" title="Skills">
         <div class="card">
           <div class="skills-badges">
